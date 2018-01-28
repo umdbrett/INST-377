@@ -25,7 +25,7 @@ Rebecca Parks Follman (adapted from Myeong Lee)
 - There is an open source project. Developer A is the organizer of the project. A made a main codebase and recruited other developers who wanted to contribute to the code. 1,000 people provided their own extensions to A, and A had a hard time reviewing all different kinds of codes. 
 	- Git has a mechanism called "fork". This allows other developers freely modify a project. Once a contributor finishes his or her work, it is possible to make a "pull request" to the project organizer so that the organizer can manage various contributions in a systematic way.  
 - Student A was working on a software project. She finished two out of three assignments. Then she modified something to finish the last part. Suddenly, the whole system didn't work. It was very hard to go back to the initial state before starting working on the third part.
-	- Similar to the first example, Git keeps track of every code change whenever a user "commitS" his or her changes. It's very easy to go back to a previous state when something breaks.
+	- Similar to the first example, Git keeps track of every code change whenever a user "commits" his or her changes. It's very easy to go back to a previous state when something breaks.
 	- See [an example](https://github.com/myeong/DCIC-Human-Face/commits/master) of a commit history on Github.
 
 <a name="products"></a>	
@@ -68,13 +68,13 @@ This is the core part of the Git session: how to use the Git?
 In order to use Git on your computer, you might need to install an app. After install the required app, every Git process is done either on the Github website or on your command-line app.
 
 - If you're using **Mac**, it is possible that Git is already installed along with Xcode. Try to open "Terminal" app, and type `git` and hit "enter". If not installed, Mac will automatically open a window to install Git. 
-- If you're using **Windows**, install "Git Shell" or "Git Bash". It is available at [this link](https://git-scm.com/download/win)
-- If you're using **Linux**, see [this page](https://git-scm.com/download/linux) for the instruction -- the installation command is different depending on the Linux version.
+- If you're using **Windows**, install "Git Shell" or "Git Bash". Each is available at [this link](https://git-scm.com/download/win)
+- If you're using **Linux**, see [this page](https://git-scm.com/download/linux) for the instructions -- the installation command is different depending on your Linux version.
 
 ### Creating a Git Repo (on the Github Website)
 1. Create your account and log in.
 2. Click the "New repository" button.
-3. Enter "Repository Name" and "Description" (e.g., "Myeong-Git-Test")
+3. Enter "Repository Name" and "Description" (e.g., "Reb-Git-Test")
 4. Set whether you want to make it "Public" or "Private". For this exercise, just make it "Public".
 5. Click "Create Repository"
 
@@ -84,7 +84,7 @@ Git clone is required only once for each repository (the first time).
 
 1. On your Git repo page, click "Clone or Download". 
 2. Copy the address. If you have not set your SSH key (or if you don't know what SSH means), copy the address that starts with `https://`.
-3. Open a terminal (on Macs, it is the "Terminal" app, and on Windows, it is the "Git Shell" app), and go to a folder where you want to locate your Git repo's files. In order to move to a designated folder, you need to use Linux commands. For example:
+3. Open a terminal (on Macs, it is the "Terminal" app, and on Windows, it is the "Git Shell" app), and go to a folder where you want to locate your Git repo's files. Note that if your folder name has a space in it, you need to wrap it with single quotes. In order to move to a designated folder, you need to use Linux commands. For example:
 
 	```
 	# list files in the current directory
@@ -101,8 +101,8 @@ Git clone is required only once for each repository (the first time).
 	```
 	git clone [your Git repo URL that you copied]
 	```
-5. Then, it automatically downloads all files from your Git repo to your computer. It is possible that there's no file (if you haven't create anything). 
-6. In order to check whether it downloaded successfully, get into the folder
+5. Then, it automatically downloads all files from your Git repo to your computer. It is possible that there's no file (if you haven't created anything). 
+6. In order to check whether it downloaded successfully, navigate to the repo folder
 
 	```
 	# Getting in to the directory
